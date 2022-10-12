@@ -9,6 +9,5 @@ export default function handler(
   req: NextApiRequest,
   res: NextApiResponse<Data>
 ) {
-  console.log("information", { hello: 'world' });
-  res.status(200).json({ name: 'John Doe' })
+  throw new Error("I'm an errror");
 }
